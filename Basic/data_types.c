@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    int age = 19;
+    float height = 1.65;
+    char grade = 'A';
+    double pi = 3.14159265359;
+
+    printf("Data Types in C\n");
+    printf("Integer (int): %d\n", age);
+    printf("Float (float): %.2f\n", height);
+    printf("Character (char): %c\n", grade);
+    printf("Double (double): %.11lf\n", pi);
+
+    return 0;
+}
+
+Output:
+Data Types in C
+Integer (int): 19
+Float (float): 1.65
+Character (char): A
+Double (double): 3.14159265359
+
+
+/* Size of Data type */
+#include <stdio.h>
+
+int main() {
+    printf("Size of int    : %lu bytes\n", sizeof(int));
+    printf("Size of float  : %lu bytes\n", sizeof(float));
+    printf("Size of char   : %lu bytes\n", sizeof(char));
+    printf("Size of double : %lu bytes\n", sizeof(double));
+
+    return 0;
+}
+
+Output:
+Size of int    : 4 bytes
+Size of float  : 4 bytes
+Size of char   : 1 bytes
+Size of double : 8 bytes
