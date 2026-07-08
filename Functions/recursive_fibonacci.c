@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+// Recursive function
+int fibonacci(int n) {
+    if (n == 0)
+        return 0;
+    else if (n == 1)
+        return 1;
+    else
+        return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int main() {
+    int n, i;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series:\n");
+
+    for (i = 0; i < n; i++) {
+        printf("%d ", fibonacci(i));
+    }
+
+    printf("\n");
+
+    return 0;
+}
+
+Output:
+Enter the number of terms: 10
+Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34
